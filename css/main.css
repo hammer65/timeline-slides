@@ -36,7 +36,7 @@ audio {
   width: auto;
   height: 480px;
 }
-#qmap > a {
+.link {
   color: #FFFFFF;
   font-weight: bold;
   font-size: 24px;

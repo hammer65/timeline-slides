@@ -24,10 +24,9 @@ SlideShow.show = function(el) {
 
 SlideShow.prototype.handleTimeChange = function(time) {
   var formattedTime = secToTime(Math.round(time, 2));
-  this.timeDisplay.innerHTML = formattedTime;
+  // this.timeDisplay.innerHTML = formattedTime;
   var id = this.getElementId(formattedTime);
   if (id) {
-    console.log(this.currentSlide);
     if (this.currentSlide) SlideShow.hide(this.currentSlide);
     this.currentSlide = document.querySelector('#' + id)
     SlideShow.show(this.currentSlide);

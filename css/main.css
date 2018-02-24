@@ -1,0 +1,46 @@
+audio {
+  background-color: #FFFFFF;
+}
+.player-container {
+  width: 700px;
+  height: 600px;
+  text-align: center;
+  padding: 4px;
+  background-color: #CCCCCC;
+}
+.slides {
+  width: 100%;
+  height: auto;
+  background-color: #000000;
+  overflow: hidden;
+}
+.slides > div {
+  display: none;
+  line-height: 558px;
+}
+/*
+.time-display {
+  font-size: 18px;
+}*/
+.large-text {
+  text-align: center;
+  font-weight: 700;
+  font-size: 60px;
+  color: #FFFFFF;
+}
+.too-wide {
+  width: 550px;
+  height:  auto;
+}
+.too-high {
+  width: auto;
+  height: 480px;
+}
+#qmap > a {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 24px;
+}
+img {
+  vertical-align: middle;
+}

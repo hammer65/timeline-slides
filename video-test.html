@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Video Test</title>
+    <script src="js/bolt.js"></script>
+    <script src="js/lightning-player.js"></script>
+  </head>
+  <body>
+    <button id="play-btn">Test</button>
+    <button type="button" id="strike">Strike</button>
+    <div>
+      <svg width="500" height="120" xmlns="http://www.w3.org/2000/svg">
+        <polyline id="line" fill="none" stroke="black"
+            points="0,0"/>
+      </svg>
+      <!--
+      <svg width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+        <polyline fill="none" stroke="black"
+            points="0,0 69,8 63,19 61,25 72,39 68,54 74,63 63,69 77,85 61,91 62,105 72,116"/>
+      </svg>
+    -->
+      <!--
+        20,100 40,60 70,80 100,20
+        20,0 38,15 18,20 21,25 10,38
+      -->
+    </div>
+    <script>
+      var p = new Player(500);
+      var btn = document.querySelector('#play-btn');
+      var strike = document.querySelector('#strike');
+      var line = document.querySelector('#line');
+      var on = false;
+      var b = new Bolt(500, 120, 14);
+      strike.addEventListener('click', () => {
+        line.setAttribute('points',
+          b.generate()
+        );
+      });
+      console.log(line);
+      btn.addEventListener('click', () => {
+        if (p.playing) {
+          p.stop();
+        } else {
+          p.play();
+        }
+      });
+    </script>
+  </body>
+</html>

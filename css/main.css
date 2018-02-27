@@ -1,46 +1,26 @@
-audio {
-  background-color: #FFFFFF;
-}
-.player-container {
-  width: 700px;
-  height: 600px;
-  text-align: center;
-  padding: 4px;
-  background-color: #CCCCCC;
-}
-.slides {
-  width: 100%;
-  height: auto;
+body {
   background-color: #000000;
-  overflow: hidden;
 }
-.slides > div {
-  display: none;
-  line-height: 558px;
+nav {
+  background-color: #000000;
+  padding: 2px 0;
 }
-/*
-.time-display {
-  font-size: 18px;
-}*/
-.large-text {
-  text-align: center;
-  font-weight: 700;
-  font-size: 60px;
-  color: #FFFFFF;
+nav > ul {
+  list-style: none;
 }
-.too-wide {
-  width: 550px;
-  height:  auto;
+nav > ul > li {
+  display: inline;
+  margin: 2px 2px;
+  border: 2px solid #AAAAAA;
+  border-radius: 4px;
+  padding: 2px 4px;
 }
-.too-high {
-  width: auto;
-  height: 480px;
-}
-.link {
-  color: #FFFFFF;
+nav > ul a {
+  text-decoration: none;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 16px;
+  color: #FFFFFF;
 }
-img {
-  vertical-align: middle;
+content {
+  background-color: #FFFFFF;
 }
